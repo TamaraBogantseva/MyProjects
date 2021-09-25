@@ -1,0 +1,63 @@
+$width: 100%;
+$textColor: #ffffff;
+
+.container {
+    margin: 0;
+    font-weight: 400;
+}
+
+.header {
+    position: relative;
+    width: $width;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__title {
+        color: $textColor;
+        text-align: center;
+        font-size: 80px;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+    }
+}
+
+.bckgr-video {
+    min-width: $width;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    opacity: 0.8;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 75%;
+    margin: 0 auto;
+    background-color: black;
+    opacity: 0.5;
+
+    &__title {
+        color: $textColor;
+        text-align: center;
+        font-size: 36px;
+        visibility: hidden;
+        margin: 0;
+        
+    }
+
+    &__text {
+        color: $textColor;
+        font-size: 24px;
+        padding: 15px 30px;
+        margin: 0;
+    }
+}
