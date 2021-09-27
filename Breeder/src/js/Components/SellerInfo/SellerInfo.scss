@@ -1,0 +1,155 @@
+@import '../../../scss/variables';
+@import '../../../scss/mixins';
+
+.seller-info-container {
+
+    min-height: 1000px;
+    font-family: $font;
+    font-weight: $font-normal;
+    border-radius: 10px;
+    padding: 10px 34px;
+    box-sizing: border-box;
+}
+
+.seller-info-title {
+    font-size: 22px;
+    line-height: 130%;
+    padding-bottom: 35px;
+}
+
+.seller-info-subtitle {
+    font-size: 18px;
+    line-height: 140%;
+    padding-bottom: 15px;
+}
+
+.seller-avatar {
+    border-radius: 50%;
+}
+
+.seller-infoblock {
+    @include flex(space-around, center, row nowrap);
+    height: 170px;
+}
+
+.sellers-about {
+    height: 100%;
+    @include flex(space-around, flex-start, column);
+}
+
+.params-list {
+    @include flex(space-around, flex-start, column);
+    flex-grow: 1;
+}
+
+.description-block {
+    padding-top: 50px;
+}
+
+.seller-description {
+    max-width: 650px;
+    background: #f0eeee;
+    border-radius: 10px;
+    padding: 20px;
+    font-weight: $font-normal;
+    font-size: 18px;
+    line-height: 27px; 
+}
+
+.seller-ads-block {
+    padding-top: 50px;
+}
+
+.seller-card {
+    margin-right: 24px;
+    margin-bottom: 24px;
+    max-width: 280px;
+    :nth-of-type(4n) {
+        margin-right: 0;
+    }
+}
+.seller-img-container {
+    max-width: 180px;
+    height: 180px;
+    margin: 15px 0;
+    display: flex;
+    border-radius: 50%;
+}
+.seller-avatar {
+    width: 100%;
+    object-position: center;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+@media screen and (min-width: 768px) and (max-width: 870px) {    
+    .seller_brood-card {
+        margin-right: 30px;
+        margin-bottom: 30px;
+        max-width: 310px;
+        :nth-of-type(4n) {
+            margin-right: 0;
+        }
+        & .brood-card__img-container {
+            max-width: 310px;
+            height: 200px;
+            display: flex;
+        }
+        .seller-img-container {
+            max-width: 180px;
+            height: 180px;
+            margin: 15px 0;
+            display: flex;
+            border-radius: 50%;
+        }
+        .seller-img-container {
+            max-width: 100px;
+            height: 100px;
+            margin: 15px 0;
+            display: flex;
+            border-radius: 50%;
+        }
+    }
+    .seller-infoblock {
+        height: unset;
+    }
+}
+
+@media screen and (max-width: 870px) {    
+    .seller-info-container {
+        min-height: 1000px;
+        font-family: $font;
+        font-weight: $font-normal;
+        background-color: $container-background;
+        width: 100%;
+        border-radius: 10px;
+        padding: 20px 18px;
+        box-sizing: border-box;
+    }
+    .seller_brood-card {
+        display: none;
+    }
+    .seller-infoblock {
+        @include flex(space-around, flex-start, column nowrap);
+        min-height: 320px;
+    }
+    .seller-avatar {
+        border-radius: 50%;
+        width: 180px;
+        height: 180px;
+        margin: 15px 0;
+    }
+    .seller-info-title {
+        font-size: 32px;
+        line-height: 42px;
+        margin-bottom: 35px;
+    }
+    .params-list {
+        & li {
+            margin-bottom: 10px;
+        }
+    }
+    .description-block {
+        margin-top: 30px;
+    }
+}
