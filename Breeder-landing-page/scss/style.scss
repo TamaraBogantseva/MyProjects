@@ -1,0 +1,93 @@
+@import './blocks/variables';
+@import './blocks/css-reset';
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500&display=swap');
+
+body {
+    background-color: $main-background;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+button {
+    transition: 0.3s;
+}
+
+button:hover {
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.header {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.logo {
+    font-size: 32px;
+    margin-right: 7px;
+    transform: rotateZ(-20deg);
+}
+
+.hidden {
+    display: none;
+}
+
+.overlay {
+    opacity: 0;
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+    z-index: 20;
+    transition: .3s all;
+}
+
+.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+@import './blocks/navigation';
+@import './blocks/header-info';
+@import './blocks/about-project';
+@import './blocks/advantages';
+@import './blocks/feedback';
+
+
+.clearfix {
+    height: 200px;
+    width: 100%;
+    background-image: url(../img/woman_with_dog_background.png);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: contain;
+}
+
+@import './blocks/footer';
+@import './blocks/modal';
+
+@media screen and (min-width: 577px) and (max-width: 870px) {
+    .clearfix {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .clearfix {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 200px;
+     }
+}

@@ -1,0 +1,24 @@
+{
+  "name": "breeder",
+  "version": "1.0.0",
+  "description": "Платформа по подбору породистых домашних питомцев.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass --watch scss:css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TamaraBogantseva/Breeder.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TamaraBogantseva/Breeder/issues"
+  },
+  "homepage": "https://github.com/TamaraBogantseva/Breeder#readme",
+  "devDependencies": {
+    "sass": "^1.37.2"
+  }
+}

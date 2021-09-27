@@ -1,0 +1,95 @@
+.about-project {
+    width: 100%;
+    font-family: $font;
+    color: $text-color;
+    // background-image: url(../img/about_background_boy.png), url(../img/about_background_girl.png);
+    // background-repeat: no-repeat, no-repeat;
+    // background-position: 795px 60px, 61px 412px;
+    padding-top: 90px;
+    padding-bottom: 110px;
+    &__container {
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+    }
+    &__title {
+        text-align: center;
+        font-size: 32px;
+        padding-bottom: 80px;
+    }
+    &__info {
+        max-width: 610px;
+    }
+    &__text {
+        font-size: 18px;
+        padding-bottom: 20px;
+        line-height: 25px;
+    }
+    &__first-section {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    &__second-section {
+        display: flex;
+        flex-direction: row-reverse;
+        padding-bottom: 20px;
+        align-items: center;
+        justify-content: space-evenly;
+        margin-top: -40px;
+    }
+    &__button {
+        width: 252px;
+        padding: 20px 0px;
+        align-self: center;
+        border-radius: 10px;
+        font-family: $font;
+        font-size: 22px;
+        line-height: 29px;
+        text-decoration: none;
+        text-align: center;
+        border: 1px solid $main-btn-color;
+        background-color: $main-btn-color;
+        color: #FFFFFF;
+        box-sizing: border-box;
+        &:hover {
+            background-color: $contact-btn-hover;
+        }
+        &:focus {
+            background-color: $contact-btn-focus;
+        }
+    }
+}
+
+@media screen and (min-width: 577px) and (max-width: 870px) {
+    .about-project {
+        padding-top: 200px;
+        padding-bottom: 110px;   
+    } 
+}
+
+// mobile 
+@media screen and (max-width: 576px) { 
+    .about-project {
+        &__container {
+            width: 85%;
+        }
+        &__title {
+            padding: 25px;
+        }
+        &__first-section {
+            flex-direction: column-reverse;
+            align-items: center;
+        }
+        &__second-section {
+            flex-direction: column-reverse;
+            padding-bottom: 30px;
+            margin-top: 0px;
+        }
+        &__image {
+            width: 240px;
+            height: 293px;
+        }
+    }
+}

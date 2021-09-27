@@ -1,0 +1,39 @@
+//кнопки
+$main-btn-color: #FF854C;
+$button-border: 2px solid $main-btn-color;
+
+//состояния кнопок
+$main-btn-hover: #FF854C;
+$main-btn-focus: #FFBA42;
+$btn-disabled: #E0E0E0;
+$contact-btn-hover: #FD4447;
+$contact-btn-focus: #FFBA42;
+
+//состояния чекбоксов
+$radio-hover: #543D93;
+$radio-focus-border: 2px solid #C9C1E3;
+$checkbox-focus-color: #FF854C;
+
+//состояния переключателей формы
+$radio-checked: #FFFFFF;
+$radio-disabled: #C9C1E3;
+
+//background
+$main-background: #FFFFFF;
+$footer-background: #543D93;
+
+//шрифты
+$font: 'IBM Plex Sans', 'arial', sans-serif;
+$font-bold: 500;
+$font-normal: 400;
+$text-color: #1A1A1B;
+$activ-btn-font-color: #FFFFFF;
+$disadled-btn-font-color: #B8B8B8;
+$placeholder-font-color: #B8B8B8;
+
+//размеры элементов
+$navigation-height: 88px;
+
+//валидация формы
+$font-color-success: #4DC880;
+$font-color-error: #FD4447;

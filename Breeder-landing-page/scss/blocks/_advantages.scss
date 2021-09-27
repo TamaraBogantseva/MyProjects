@@ -1,0 +1,154 @@
+.advantages {
+    font-family: $font;
+    color: $text-color;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 110px;
+    &__title {
+        text-align: center;
+        font-size: 32px;
+        padding-bottom: 60px;
+    }
+    &-list {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding-bottom: 60px;
+        &__item {
+            text-align: center;
+            max-width: 30%;
+            // box-shadow: 1px 2px 12px 6px rgba(84,61,147,0.2);
+            border-radius: 10px;
+            padding: 25px;
+            margin-bottom: 25px;
+            &:nth-child(2n+1) {
+                margin-right: 25px;
+            }
+        }
+        &__title {
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 31px;
+            padding: 16px 0px;
+        }
+        &__text {
+            font-size: 18px;
+            line-height: 25px;
+        }
+    }
+    &__button {
+        width: 252px;
+        padding: 20px 0px;
+        border-radius: 10px;
+        
+        border: 1px solid $main-btn-color;
+        background-color: $main-btn-color;
+        font-family: $font;
+        font-size: 22px;
+        color: #FFFFFF;
+        
+        align-self: center;
+        text-decoration: none;
+        text-align: center;
+        &:hover {
+            background-color: $contact-btn-hover;
+//             color: $activ-btn-font-color;
+        }
+        &:focus {
+            background-color: $contact-btn-focus;
+//             border: 2px solid $main-btn-focus;
+        }
+    }
+}
+
+// tablet
+@media screen and (min-width: 577px) and (max-width: 870px) {    
+    .advantages {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 80px;
+        &__title {
+            text-align: center;
+            font-size: 32px;
+            padding-bottom: 50px;
+        }
+        &-list {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-between;
+            padding-bottom: 60px;
+            &__item {
+                display: flex;
+                flex-flow: column nowrap;
+                justify-content: flex-start;
+                align-items: center;
+                max-width: 40%;
+                height: 330px;
+                padding: 25px 20px 0 20px;
+                margin-bottom: 20px;
+            }
+            &__title {
+                font-weight: 600;
+                font-size: 24px;
+                line-height: 31px;
+                padding: 28px 0px;
+            }
+            &__text {
+                font-size: 18px;
+                line-height: 25px;
+            }
+        }
+        &__button {
+            width: 252px;
+            padding: 20px 0px;
+            border-radius: 10px;
+            border: $button-border;
+            background-color: transparent;
+            font-family: $font;
+            font-size: 22px;
+            line-height: 29px;
+            color: $main-btn-color;
+            align-self: center;
+            &:hover {
+                background-color: $main-btn-hover;
+                color: $activ-btn-font-color;
+            }
+            &:focus {
+                background-color: $main-btn-focus;
+                border: 2px solid $main-btn-focus;
+            }
+        }
+    }
+}
+
+// mobile 
+@media screen and (max-width: 576px) { 
+    .advantages {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 80px;
+        &__title {
+            text-align: center;
+            font-size: 32px;
+            padding-bottom: 50px;
+        }
+        &-list {
+            display: flex;
+            flex-flow: column nowrap;
+            align-items: center;
+            justify-content: space-between;
+            padding-bottom: 60px;
+            &__item {
+                text-align: center;
+                max-width: 60%;
+                padding: 17px;
+                margin-bottom: 20px;
+                &:nth-child(2n+1) {
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+}
