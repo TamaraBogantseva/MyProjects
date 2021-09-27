@@ -1,0 +1,15 @@
+.chatsList {
+    grid-column: 1;
+    grid-row: 2/6;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    padding-right: 20px;
+    overflow-y: scroll;
+}
+.chats-link {
+    text-decoration: none;
+    color: #000;
+}

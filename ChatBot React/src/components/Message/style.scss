@@ -1,0 +1,17 @@
+.msg-new {
+    width: 150px;
+    background-color: paleturquoise;
+    padding: 5px 10px;
+    margin: 5px;
+    border-radius: 20px;
+
+    &__date {
+        font-size: 10px;
+        font-style: italic;
+    }
+}
+
+.user {
+    background-color: rgb(206, 244, 244);
+    align-self: flex-end;
+}

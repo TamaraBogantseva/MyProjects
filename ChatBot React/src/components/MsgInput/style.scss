@@ -1,0 +1,11 @@
+
+.msg {
+    &-user {
+        width: 100%;
+        display: flex;
+    }
+    &-input {
+        background-color: #fff;
+        flex: 1;
+    }
+}

@@ -1,0 +1,20 @@
+[
+    {
+        "id": "1",
+        "name": "Darth Vader",
+        "text": "I am your father",
+        "img": "../../src/resources/img/avatars/darth_vader.jpeg"
+    },
+    {
+        "id": "2",
+        "name": "Chewbacca",
+        "text": "Arrrrw",
+        "img": "../../src/resources/img/avatars/chewbacca.jpg"
+    },
+    {
+        "id": "3",
+        "name": "Luke Skywalker",
+        "text": "I am Here To Rescue You.",
+        "img": "../../src/resources/img/avatars/luke.jpg"
+    }
+]
